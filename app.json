@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Countries-mobile",
-    "slug": "Countries-mobile",
+    "slug": "countries-mobile",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -21,10 +21,17 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.nursultan23.countriesmobile"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "c5a60e92-6f05-4753-ade9-31bae7d9285b"
+      }
+    },
+    "owner": "nursultan23"
   }
 }

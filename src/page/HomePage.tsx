@@ -26,7 +26,7 @@ export const HomePage = ({ navigation }: {navigation: any}) => {
   }, [])
 
   return (
-    <SafeAreaView>
+    <SafeAreaView style={{ flex: 1}}>
       <ScrollView>
         <View style={{ flex: 1, marginLeft: 5, marginRight: 5 }}>
           <View>

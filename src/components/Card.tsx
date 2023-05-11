@@ -50,7 +50,6 @@ const CardOptionValue = styled(Text)`
 
 const AddBookmarks = styled(Button)`
   padding: 15px;
-  margin: 10px;
 `
 
 interface CardProps extends CountryInfo {
@@ -122,10 +121,9 @@ export const Card = ({ navigation, ...props }: CardProps) => {
             </CardListItem>
           ))}
         </CardList>
-        {!isCardBookmarks ? (<AddBookmarks title='Delete bookmarks' onPress={onDeleteBookmarksClick} />) 
-        : (<AddBookmarks title='Add bookmarks' onPress={onAddBookmarksClick} />)}
-        
       </CardBody>
+      {!isCardBookmarks ? (<AddBookmarks title='Delete bookmarks' onPress={onDeleteBookmarksClick} />) 
+        : (<AddBookmarks title='Add bookmarks' onPress={onAddBookmarksClick} />)}
     </Wrapper>
   </TouchableOpacity>
  )
